@@ -237,7 +237,7 @@ def create_parser() -> argparse.ArgumentParser:
         "--service",
         "-s",
         type=str,
-        default="google",
+        default="openai",
         help="The service to use for translation.",
     )
     parse_params.add_argument(
