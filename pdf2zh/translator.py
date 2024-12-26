@@ -281,9 +281,9 @@ class OpenAITranslator(BaseTranslator):
     # https://github.com/openai/openai-python
     name = "openai"
     envs = {
-        "OPENAI_BASE_URL": "https://api.aiearth.vip/v1",
-        "OPENAI_API_KEY": sk-FX7KpAHKYDvxojMw2fYy60NesxckEOoXbkBeP9LA0e9yQ6G9,
-        "OPENAI_MODEL": "gpt-4o",
+        "OPENAI_BASE_URL": "https://api.openai.com/v1",
+        "OPENAI_API_KEY": None,
+        "OPENAI_MODEL": "gpt-4o-mini",
     }
     CustomPrompt = True
 
