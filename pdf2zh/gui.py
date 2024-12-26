@@ -34,21 +34,7 @@ from pdf2zh.translator import (
 
 # The following variables associate strings with translators
 service_map: dict[str, BaseTranslator] = {
-    "Google": GoogleTranslator,
-    "Bing": BingTranslator,
-    "DeepL": DeepLTranslator,
-    "DeepLX": DeepLXTranslator,
-    "Ollama": OllamaTranslator,
-    "AzureOpenAI": AzureOpenAITranslator,
     "OpenAI": OpenAITranslator,
-    "Zhipu": ZhipuTranslator,
-    "ModelScope": ModelScopeTranslator,
-    "Silicon": SiliconTranslator,
-    "Gemini": GeminiTranslator,
-    "Azure": AzureTranslator,
-    "Tencent": TencentTranslator,
-    "Dify": DifyTranslator,
-    "AnythingLLM": AnythingLLMTranslator,
 }
 
 # The following variables associate strings with specific languages
@@ -382,8 +368,8 @@ with gr.Blocks(
             gr.Markdown("## Option")
             service = gr.Dropdown(
                 label="Service",
-                choices=service_map.keys(),
-                value="Google",
+                choices=["OpenAI"]
+                value="OpenAI",
             )
             envs = []
             for i in range(3):
