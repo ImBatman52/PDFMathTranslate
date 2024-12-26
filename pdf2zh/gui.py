@@ -368,7 +368,7 @@ with gr.Blocks(
             gr.Markdown("## Option")
             service = gr.Dropdown(
                 label="Service",
-                choices=lang_map.keys(),
+                choices=service_map.keys(),
                 value="OpenAI",
             )
             envs = []
